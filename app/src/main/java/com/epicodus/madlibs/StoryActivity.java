@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 public class StoryActivity extends AppCompatActivity {
     public static final String TAG = StoryActivity.class.getSimpleName();
     @Bind(R.id.storyHolder) TextView mStoryHolder;
+    @Bind(R.id.tvResultsHeader) TextView mResultsHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,6 @@ public class StoryActivity extends AppCompatActivity {
         String pluralNoun4 = intent.getStringExtra("pluralNoun4");
         String pluralProf = intent.getStringExtra("pluralProf");
         String storyChoice = intent.getStringExtra("storyChoice");
-        Log.d(TAG, storyChoice);
         String storyEinstein = "Albert Einstein, the son of " + malCeleb + " and " + femCeleb +
                 ", was born in Ulm, Germany, in 1879. In 1902, he had a job " +
                 "as assistant " + noun3 + " in the Swiss patent office and attended " +
@@ -55,8 +55,7 @@ public class StoryActivity extends AppCompatActivity {
         } else if (storyChoice.equals("Coding")){
             mStoryHolder.setText("" + storyCoding);
         }
-
-
+        mResultsHeader.setText("Your custom story about " + storyChoice);
 
     }
 }

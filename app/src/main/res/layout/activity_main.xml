@@ -8,6 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/mainLayout"
     tools:context="com.epicodus.madlibs.MainActivity">
 
     <TextView
@@ -51,7 +52,7 @@
                 android:id="@+id/tvPlace"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText" />
 
             <EditText
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPlace"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -71,7 +72,7 @@
                 android:id="@+id/tvAdjective1"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -81,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfAdjective1"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -93,7 +94,7 @@
                 android:id="@+id/tvAdjective2"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -103,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfAdjective2"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -115,7 +116,7 @@
                 android:id="@+id/tvFemCeleb"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -125,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfFemCeleb"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -137,7 +138,7 @@
                 android:id="@+id/tvMalCeleb"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -147,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfMalCeleb"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -159,7 +160,7 @@
                 android:id="@+id/tvNoun1"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -169,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfNoun1"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -181,7 +182,7 @@
                 android:id="@+id/tvNoun2"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -191,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfNoun2"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -203,7 +204,7 @@
                 android:id="@+id/tvNoun3"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -213,7 +214,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfNoun3"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -225,7 +226,7 @@
                 android:id="@+id/tvPluralNoun1"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -235,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPluralNoun1"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -247,7 +248,7 @@
                 android:id="@+id/tvPluralNoun2"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -257,7 +258,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPluralNoun2"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -269,7 +270,7 @@
                 android:id="@+id/tvPluralNoun3"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -279,7 +280,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPluralNoun3"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -291,7 +292,7 @@
                 android:id="@+id/tvPluralNoun4"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -301,7 +302,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPluralNoun4"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
         <TableRow
@@ -313,7 +314,7 @@
                 android:id="@+id/tvPluralProf"
                 android:layout_column="4"
                 android:textStyle="normal"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorSecondaryText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -323,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tfPluralProf"
                 android:layout_column="8"
-                android:gravity="right" />
+                 />
         </TableRow>
 
     </TableLayout>
@@ -332,13 +333,13 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Create Story"
         android:id="@+id/btnCreateStory"
         android:background="@color/colorAccent"
         android:textColor="@color/colorPrimaryLight"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true" />
 
