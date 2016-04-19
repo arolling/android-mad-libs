@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 String pluralNoun3 = mTfPluralNoun3.getText().toString();
                 String pluralNoun4 = mTfPluralNoun4.getText().toString();
                 String pluralProf = mTfPluralProf.getText().toString();
-
+                String storyChoice = mStorySpinner.getSelectedItem().toString();
                 Intent intent = new Intent(MainActivity.this, StoryActivity.class);
                 intent.putExtra("place", place);
                 intent.putExtra("adjective1", adjective1);
@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("pluralNoun3", pluralNoun3);
                 intent.putExtra("pluralNoun4", pluralNoun4);
                 intent.putExtra("pluralProf", pluralProf);
-
+                intent.putExtra("storyChoice", storyChoice);
+                Log.d(TAG, storyChoice);
                 startActivity(intent);
             }
         });

@@ -3,6 +3,7 @@ package com.epicodus.madlibs;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -32,7 +33,9 @@ public class StoryActivity extends AppCompatActivity {
         String pluralNoun3 = intent.getStringExtra("pluralNoun3");
         String pluralNoun4 = intent.getStringExtra("pluralNoun4");
         String pluralProf = intent.getStringExtra("pluralProf");
-        String story = "Albert Einstein, the son of " + malCeleb + " and " + femCeleb +
+        String storyChoice = intent.getStringExtra("storyChoice");
+        Log.d(TAG, storyChoice);
+        String storyEinstein = "Albert Einstein, the son of " + malCeleb + " and " + femCeleb +
                 ", was born in Ulm, Germany, in 1879. In 1902, he had a job " +
                 "as assistant " + noun3 + " in the Swiss patent office and attended " +
                 "the University of Zurich. There he began studying atoms, molecules, and " + pluralNoun1 +
@@ -44,9 +47,16 @@ public class StoryActivity extends AppCompatActivity {
                 "In 1933, when Hitler became Chancellor of " + place + ", " +
                 "Einstein came to America to take a post at Princeton Institute for " +
                 pluralNoun2 + ", where his theories helped America devise the first" +
-                "atomic " + noun1 + ". There is no question about it: Einstein was " +
-                "one of the most brilliant " + pluralProf + "of our time.";
-        mStoryHolder.setText("" + story);
+                " atomic " + noun1 + ". There is no question about it: Einstein was " +
+                "one of the most brilliant " + pluralProf + " of our time.";
+        String storyCoding = "Epicodus is a " + adjective1 + " place to learn. It is found in " + place + ", also the home of " + malCeleb + ". The " + pluralNoun2 + " outside the building and the " + adjective2 + " " + noun3 + " give the place character. By the end of our time here, we should all be " + pluralProf + " of " + pluralNoun1 + " and hopefully almost as rich as " + femCeleb + ". Whenever the " + adjective1 + " " + pluralNoun3 + " cause problems, the great staff is here to fix them. We also each get a " + noun2 + " and a " + noun1 + " with our " + pluralNoun4 + ". What fun!";
+        if(storyChoice.equals("Einstein")){
+            mStoryHolder.setText("" + storyEinstein);
+        } else if (storyChoice.equals("Coding")){
+            mStoryHolder.setText("" + storyCoding);
+        }
+
+
 
     }
 }

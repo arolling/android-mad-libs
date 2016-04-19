@@ -2,8 +2,6 @@
     <string name="app_name">Mad Libs</string>
     <string-array name="story_array">
         <item>Einstein</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
+        <item>Coding</item>
     </string-array>
 </resources>
