@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.tfPluralNoun3) EditText mTfPluralNoun3;
     @Bind(R.id.tfPluralNoun4) EditText mTfPluralNoun4;
     @Bind(R.id.tfPluralProf) EditText mTfPluralProf;
-
+    @Bind(R.id.spinner) Spinner mStorySpinner;
 
 
     @Override
@@ -35,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.story_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mStorySpinner.setAdapter(adapter);
 
         mBtnCreateStory.setOnClickListener(new View.OnClickListener() {
             @Override
