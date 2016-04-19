@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,15 +22,19 @@
         android:paddingTop="10dp"
         android:id="@+id/textView" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/btnCreateStory"
+        >
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingTop="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="50dp">
+        android:layout_alignParentStart="true">
 
         <TableRow
             android:layout_width="match_parent"
@@ -182,7 +188,141 @@
                 android:gravity="right" />
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Noun #3"
+                android:id="@+id/tvNoun3"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfNoun3"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Plural Noun #1"
+                android:id="@+id/tvPluralNoun1"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPluralNoun1"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Plural Noun #2"
+                android:id="@+id/tvPluralNoun2"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPluralNoun2"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Plural Noun #3"
+                android:id="@+id/tvPluralNoun3"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPluralNoun3"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Plural Noun #4"
+                android:id="@+id/tvPluralNoun4"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPluralNoun4"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Plural Profession"
+                android:id="@+id/tvPluralProf"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPluralProf"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
     </TableLayout>
+    </ScrollView>
+
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -190,8 +330,11 @@
         android:layout_height="wrap_content"
         android:text="Create Story"
         android:id="@+id/btnCreateStory"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimaryLight" />
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true" />
+
+
 </RelativeLayout>

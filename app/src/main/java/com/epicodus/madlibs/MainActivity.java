@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.tfMalCeleb) EditText mTfMalCeleb;
     @Bind(R.id.tfNoun1) EditText mTfNoun1;
     @Bind(R.id.tfNoun2) EditText mTfNoun2;
+    @Bind(R.id.tfNoun3) EditText mTfNoun3;
+    @Bind(R.id.tfPluralNoun1) EditText mTfPluralNoun1;
+    @Bind(R.id.tfPluralNoun2) EditText mTfPluralNoun2;
+    @Bind(R.id.tfPluralNoun3) EditText mTfPluralNoun3;
+    @Bind(R.id.tfPluralNoun4) EditText mTfPluralNoun4;
+    @Bind(R.id.tfPluralProf) EditText mTfPluralProf;
 
 
 
@@ -40,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
                 String malCeleb = mTfMalCeleb.getText().toString();
                 String noun1 = mTfNoun1.getText().toString();
                 String noun2 = mTfNoun2.getText().toString();
+                String noun3 = mTfNoun3.getText().toString();
+                String pluralNoun1 = mTfPluralNoun1.getText().toString();
+                String pluralNoun2 = mTfPluralNoun2.getText().toString();
+                String pluralNoun3 = mTfPluralNoun3.getText().toString();
+                String pluralNoun4 = mTfPluralNoun4.getText().toString();
+                String pluralProf = mTfPluralProf.getText().toString();
+
                 Intent intent = new Intent(MainActivity.this, StoryActivity.class);
                 intent.putExtra("place", place);
                 intent.putExtra("adjective1", adjective1);
@@ -48,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("malCeleb", malCeleb);
                 intent.putExtra("noun1", noun1);
                 intent.putExtra("noun2", noun2);
+                intent.putExtra("noun3", noun3);
+                intent.putExtra("pluralNoun1", pluralNoun1);
+                intent.putExtra("pluralNoun2", pluralNoun2);
+                intent.putExtra("pluralNoun3", pluralNoun3);
+                intent.putExtra("pluralNoun4", pluralNoun4);
+                intent.putExtra("pluralProf", pluralProf);
+
                 startActivity(intent);
             }
         });
