@@ -6,11 +6,180 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.epicodus.madlibs.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Fill in the Blanks!"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+        android:paddingTop="10dp"
+        android:id="@+id/textView" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="1dp"
+        android:layout_marginTop="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="A Place"
+                android:id="@+id/tvPlace"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfPlace"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Adjective #1"
+                android:id="@+id/tvAdjective1"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfAdjective1"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Adjective #2"
+                android:id="@+id/tvAdjective2"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfAdjective2"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Female Celebrity"
+                android:id="@+id/tvFemCeleb"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfFemCeleb"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Male Celebrity"
+                android:id="@+id/tvMalCeleb"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfMalCeleb"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Noun #1"
+                android:id="@+id/tvNoun1"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfNoun1"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Noun #2"
+                android:id="@+id/tvNoun2"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tfNoun2"
+                android:layout_column="8"
+                android:gravity="right" />
+        </TableRow>
+
+    </TableLayout>
 </RelativeLayout>
